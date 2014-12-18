@@ -63,18 +63,4 @@ class Ticket extends ZendeskRequester
             $userId
         );
     }
-
-    /**
-     * @param int $organisationId
-     * @return string json
-     * @throws Exception
-     * TODO: Create a test for this
-     */
-    public function getRequestedTicketsByOrganisationId($organisationId)
-    {
-        return $this->getWithInt(
-            '/api/v2/users/' . $organisationId . '/tickets/requested.json',
-            $organisationId
-        );
-    }
 }
