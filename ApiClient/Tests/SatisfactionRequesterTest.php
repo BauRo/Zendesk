@@ -6,7 +6,7 @@ use BauRo\Zendesk\ApiClient\Service\ZendeskConnector;
 use BauRo\Zendesk\ApiClient\Requester\Satisfaction;
 
 /**
- * Class TicketRequesterTest
+ * Class SatisfactionRequesterTest
  * @package BauRo\Zendesk\ApiClient\Tests
  */
 class SatisfactionRequesterTest extends \PHPUnit_Framework_TestCase
