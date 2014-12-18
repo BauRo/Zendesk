@@ -26,16 +26,6 @@ class ZendeskRequester
 
     /**
      * @param $url
-     * @return mixed
-     * @throws Exception
-     */
-    protected function get($url)
-    {
-        return $this->connector->retrieveRequest($url);
-    }
-
-    /**
-     * @param $url
      * @param $int
      * @return string json
      * @throws Exception

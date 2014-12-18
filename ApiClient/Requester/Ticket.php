@@ -19,14 +19,9 @@ class Ticket extends ZendeskRequester
      */
     public function getTicketList($page = 1)
     {
-        if ($page) {
-            return $this->getWithInt(
-                '/api/v2/tickets.json?page=' . $page,
-                $page
-            );
-        }
-        return $this->get(
-            '/api/v2/tickets.json'
+        return $this->getWithInt(
+            '/api/v2/tickets.json?page=' . $page,
+            $page
         );
     }
 
